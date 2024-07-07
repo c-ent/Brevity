@@ -1,3 +1,5 @@
+ https://c-ent.github.io/junior-webdev-application-july-2024--digitalcart/
+
 # junior-webdev-application-july-2024-digitalcart
 
 ## Author Information
@@ -6,7 +8,6 @@
 **Email:** [encarnacionelher@gmail.com](mailto:encarnacionelher@gmail.com)
 
 ## Project Overview
-
 This repository contains my redesigned version of the SaaS website [shortform.com](https://shortform.com). 
 
 ## Design Process
@@ -33,3 +34,27 @@ The project uses the **Poppins** font for all text elements.
 - **Lighter Text Color:** `#EBEBEB`
 - **Green:** `#468482`
 
+
+
+## Getting Started
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/c-ent/junior-webdev-application-july-2024-digitalcart.git
+    ```
+
+2. Navigate into the project directory:
+
+    ```bash
+    cd junior-webdev-application-july-2024-digitalcart
+    ```
+
+3. Open the `index.html` file in your browser to view the project.
+
+## Tools and Technologies Used
+
+- **Figma:** For UI design.
+- **Tailwind CSS:** For styling.
+- **Dribble, Free SVG, Adobe Stock** for free svg,icons and illustrations
