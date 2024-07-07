@@ -12,7 +12,7 @@
 </head>
 <body class="font-[Poppins] ">
 
-    <header  class="flex items-center max-w-[1400px] bg-black bg-opacity-25 backdrop-blur-md  rounded-full px-5 py-2 sticky top-[20px]  mx-auto z-50 h-[60px] ">
+    <header  class="flex items-center max-w-[1400px] bg-[#0A2540] bg-opacity-25 backdrop-blur-[5px]  rounded-[10px] px-5  sticky top-[20px]  mx-auto z-50 h-[70px] shadow-[inset_0px_1px_1px_0px_rgba(255,255,255,0.15)]">
         <nav class="flex items-center w-full justify-between">
             <!-- Logo or Brand Name -->
             <div class="flex-1">
@@ -50,13 +50,13 @@
     </header>
     
 
-   <main class="-mt-[60px]  overflow-hidden ">
+   <main class="-mt-[70px]  overflow-hidden ">
         <!-- Banner -->
-        <section class="bg-[url('/images/bg/bannerbg.svg')] relative w-screen h-screen bg-no-repeat bg-cover flex flex-col gap-5 items-center justify-center text-center mb-[100px]">
+        <section class="bg-[url('/images/bg/bannerbg.svg')]  bg-no-repeat bg-cover  bg-fixed relative w-screen h-screen flex flex-col gap-5 items-center justify-center text-center mb-[100px] px-5">
             <p class="rounded-full  bg-yellow-300 text-black px-5 py-1">
                 Learn faster. Get smarter.
             </p>
-            <h1 class="text-7xl text-white  font-medium  leading-tight">
+            <h1 class="text-[48px]  sm:text-7xl text-white  font-medium  sm:leading-normal">
                 Way more than <br> book summaries
             </h1>
             <p class="text-white font-medium max-w-[660px] ">
@@ -77,11 +77,11 @@
         </section>
 
         <!-- Feature -->
-        <section class="flex gap-[40px] max-w-[1440px]  mx-auto mb-[100px] px-5 ">
+        <section class="flex  flex-col sm:flex-row  gap-[40px] max-w-[1440px]  mx-auto mb-[100px] px-5 ">
             <div class="flex-1">
                 <img src="/images/elements/personreading.png" alt="Person Reading" class="max-h-[500px]">
             </div>
-            <div class="flex  flex-col flex-1 rounded-[20px] p-[60px] gap-5 bg-gradient-to-l from-[#468482] to-[#25366B] ">
+            <div class="flex flex-1  flex-col  rounded-[20px] p-[30px] sm:p-[60px] gap-5 bg-gradient-to-l from-[#468482] to-[#25366B] ">
                 <p class="bg-[#EBEBEB] rounded-full px-5 py-1 w-fit">Feature</p>
                 <h2 class="text-white text-[40px] font-semibold max-w-[500px]">Unlock Your Potential with BookSummary</h2>
                 <p class="text-white text-[16px]">This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. </p>
@@ -92,29 +92,254 @@
         </section>
 
         <!-- Benefits -->
-        <section class="flex gap-[40px] max-w-[1440px]  mx-auto mb-[100px] px-5 ">
-            <div class="w-full lg:w-[30%]">
-                <p class="bg-[#EBEBEB] rounded-full px-5 py-1 w-fit">Benefits</p>
-                <h2 class="text-[#001431] text-[40px] font-semibold max-w-[500px]">Unlock Your Potential with BookSummary</h2>
-                <p class="text-black text-[16px]">This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. </p>
+        <section class="flex  flex-col sm:flex-row gap-[40px] max-w-[1440px]  mx-auto mb-[100px] px-5 ">
+            <div class="w-full lg:w-[30%] flex flex-col  justify-between">
+                <div>
+                    <p class="bg-[#EBEBEB] rounded-full px-5 py-1 w-fit">Benefits</p>
+                    <h2 class="text-[#001431] text-[40px] font-semibold max-w-[500px]">Unlock Your Potential with BookSummary</h2>
+                    <p class="text-[#434344] text-[16px]">This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. </p>
+                </div>
+                <div class="flex justify-between items-end px-5">
+                    <img src="/images/elements/plant1.png" alt="Plant" class="w-[100px] h-auto">
+                    <img src="/images/elements/plant2.png" alt="Plant" class="w-[100px] h-[266px]">
+                    <img src="/images/elements/plant1.png" alt="Plant" class="w-[100px] h-auto">
+                </div>
+               
             </div>
 
-            <div class="w-full lg:w-[70%]">
-                <div>
-                    <div class="text-white">
-                        <h3 class>Crystal-Clear Logic</h3>
-                        <p>This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. </p>
+            <div class="flex flex-col w-full lg:w-[70%] text-white gap-16">
+                <div class="flex flex-col sm:flex-row  gap-16 ">
+                    <div class="flex flex-1 flex-col bg-gradient-to-b from-[#468482] to-[#3466A9]  p-[50px] rounded-[20px] gap-3">
+                        <img src="/images/elements/unicorn.png" alt="Unicorn" class="w-[80px] h-[80px]">
+                        <h4 class="text-[24px] font-semibold">Crystal-Clear Logic</h4>
+                        <p class="text-[18px] max-w-[300px]">This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. </p>
+                    </div>
+                    
+                    <div class="flex flex-1 flex-col bg-gradient-to-b from-[#468482] to-[#3466A9]  p-[50px] rounded-[20px] gap-3">
+                        <img src="/images/elements/pyramid.png" alt="Pyramid" class="w-[80px] h-[80px]">
+                        <h4 class="text-[24px] font-semibold">Crystal-Clear Logic</h4>
+                        <p class="text-[18px] max-w-[300px]">This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. </p>
                     </div>
                 </div>
 
-                <div>
-
+                <div class="flex  flex-col sm:flex-row gap-16 ">
+                    <div class="flex flex-1 flex-col bg-gradient-to-b from-[#468482] to-[#3466A9]  p-[50px] rounded-[20px] gap-3">
+                        <img src="/images/elements/unicorn.png" alt="Unicorn" class="w-[80px] h-[80px]">
+                        <h4 class="text-[24px] font-semibold">Crystal-Clear Logic</h4>
+                        <p class="text-[18px] max-w-[300px]">This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. </p>
+                    </div>
+                    
+                    <div class="flex flex-1 flex-col bg-gradient-to-b from-[#468482] to-[#3466A9]  p-[50px] rounded-[20px] gap-3">
+                        <img src="/images/elements/bulb.png" alt="Bulb" class="w-[80px] h-[80px]">
+                        <h4 class="text-[24px] font-semibold">Crystal-Clear Logic</h4>
+                        <p class="text-[18px] max-w-[300px]">This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. </p>
+                    </div>
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
 
+        <!-- How it works -->
+        <section class="bg-[#F6F9FC]">
+            <div class="flex flex-col gap-[40px] max-w-[1440px]  mx-auto  px-5 py-[100px] ">
+                <div class="flex flex-col items-center max-w-[500px] mx-auto text-center">
+                    <p class="bg-[#EBEBEB] rounded-full px-5 py-1 w-fit">How It Works</p>
+                    <h2 class="text-[#001431] text-[40px] font-semibold max-w-[500px]">Step-by-Step Guide to BookSummary</h2>
+                    <p class="text-[#434344] text-[16px]">This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. </p>
+                </div>
+    
+    
+                <div class="relative">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col sm:flex-row justify-between h-screen items-center ">
+                        <div class="flex flex-1 gap-5  ">
+                            <p class="  relative z-[50] flex-shrink-0
+                            bg-[#001431] w-[80px] h-[80px] flex items-center justify-center rounded-full font-bold text-white text-[40px]">
+                                01
+                                <div class="border-l solid h-screen absolute left-10"></div>
+                            </p>
+                            <div class="flex flex-col gap-2">
+                                <p class="font-semibold text-[16px] text-[#3466A9]">Key Features</p>
+                                <h3 class="text-[36px] max-w-[400px] font-semibold text-[#001431]">
+                                    Create Your Account and Sign Up
+                                </h3>
+    
+                                <p class="text-[16px] text-[#434344] max-w-[350px]">Once we have your content finalized, we’ll replace this placeholder text  with your real content.</p>
+    
+                                <p class="text-[16px] text-[#434344] max-w-[350px]">Once we have your content finalized, we’ll replace this placeholder text  with your real content.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 ">
+                            <img src="/images/books/bookbalance.png" alt="Book about Balance" class="w-[300px] h-[300px] mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex flex-col sm:flex-row justify-between h-screen items-center">
+                        <div class="flex flex-1 gap-5">
+                            <p class="  relative z-[50] flex-shrink-0
+                            bg-[#001431] w-[80px] h-[80px] flex items-center justify-center rounded-full font-bold text-white text-[40px]">
+                                02
+                                <div class="border-l solid h-screen absolute left-10"></div>
+                            </p>
+                            <div class="flex flex-col gap-2">
+                                <p class="font-semibold text-[16px] text-[#3466A9]">Key Features</p>
+                                <h3 class="text-[36px] max-w-[400px] font-semibold text-[#001431]">
+                                    Explore and Browse Our Library
+                                </h3>
+    
+                                <p class="text-[16px] text-[#434344] max-w-[350px]">Once we have your content finalized, we’ll replace this placeholder text  with your real content.</p>
+    
+                                <p class="text-[16px] text-[#434344] max-w-[350px]">Once we have your content finalized, we’ll replace this placeholder text  with your real content.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 ">
+                            <img src="/images/books/bookmoon.png" alt="Book about Moon" class="w-[300px] h-[300px] mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex flex-col sm:flex-row justify-between h-screen items-center">
+                        <div class="flex flex-1 gap-5">
+                            <p class="  relative z-[50] flex-shrink-0
+                            bg-[#001431] w-[80px] h-[80px] flex items-center justify-center rounded-full font-bold text-white text-[40px]">
+                            03
+
+                            </p>
+                            <div class="flex flex-col gap-2">
+                                <p class="font-semibold text-[16px] text-[#3466A9]">Key Features</p>
+                                <h3 class="text-[36px] max-w-[400px] font-semibold text-[#001431]">
+                                    Dive In to Our Innovative Features
+                                </h3>
+    
+                                <p class="text-[16px] text-[#434344] max-w-[350px]">Once we have your content finalized, we’ll replace this placeholder text  with your real content.</p>
+        
+                                <p class="text-[16px] text-[#434344] max-w-[350px]">Once we have your content finalized, we’ll replace this placeholder text  with your real content.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 ">
+                            <img src="/images/books/bookanimals.png" alt="Book about Animals" class="w-[300px] h-[300px] mx-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Books -->
+        <section class="bg-gradient-to-b from-[#468482] to-[#3466A9] px-5 py-16 mb-[100px]">
+            <div class="flex flex-col sm:flex-row justify-center gap-[40px] max-w-[1440px] p-[30px] sm:p-[60px] rounded-[20px] mx-auto  bg-white bg-opacity-5 border border-[#AEAEAE]  gap-20">
+                <!-- Title -->
+                <div class="flex flex-col flex-auto w-full sm:w-[40%]  gap-3 ">
+                    <p class="bg-[#EBEBEB] rounded-full px-5 py-1 w-fit">Feature</p>
+                    <h2 class="text-white text-[40px] font-semibold ">Featured Books</h2>
+                    <p class="text-white text-[16px]">This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. </p>
+                    <button type="button" class="rounded-full w-fit  bg-yellow-300 text-black px-5 py-1 ">
+                        Browse Books
+                    </button>
+                </div>
+
+
+                <!--  Books -->
+                <div class="flex flex-wrap items-center   w-full sm:w-[60%] text-white text-[16px] justify-center gap-20">
+                    <div>
+                        <img src="/images/books/bravenewworld.png" alt="Brave New World" class="w-[200px] h-auto mx-auto mb-4">
+                        <p >Brave New World</p>
+                        <p>Author</p>
+                    </div>
+
+                    <div>
+                        <img src="/images/books/tostaky.png" alt="Tostaky" class="w-[200px] h-auto mx-auto mb-4">
+                        <p>Tostaky</p>
+                        <p>Author</p>
+                    </div>
+
+                    <div>
+                        <img src="/images/books/1984.png" alt="1984" class="w-[200px] h-auto mx-auto mb-4">
+                        <p>1984</p>
+                        <p>Author</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial -->
+        <section class="flex flex-col gap-8  max-w-[1440px] mx-auto mb-[100px] p-5"> 
+            <div class="flex flex-col items-center max-w-[500px] mx-auto text-center">
+                <p class="bg-[#EBEBEB] rounded-full px-5 py-1 w-fit">User Feedback</p>
+                <h2 class="text-[#001431] text-[40px] font-semibold max-w-[500px]">Why People Love Using BookSummary</h2>
+            </div>
+
+            <div class="max-w-[1050px] mx-auto">
+                <div class="flex flex-wrap justify-center mx-auto max-w-[900px] gap-2">
+                    <img src="/images/people/avatar1.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
+                    <img src="/images/people/avatar2.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
+                    <img src="/images/people/avatar3.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
+                    <img src="/images/people/avatar4.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
+                    <img src="/images/people/avatar1.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
+                    <img src="/images/people/avatar2.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
+                    <img src="/images/people/avatar3.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
+                    <img src="/images/people/avatar4.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
+                    <img src="/images/people/avatar1.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
+                    <img src="/images/people/avatar2.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
+                    <img src="/images/people/avatar3.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
+                    <img src="/images/people/avatar4.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
+                    <img src="/images/people/avatar4.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
+                    <img src="/images/people/avatar1.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
+                    <img src="/images/people/avatar2.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
+                    <img src="/images/people/avatar3.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
+                    <img src="/images/people/avatar4.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
+                </div>
+            </div>
+            <div class="flex flex-col items-center max-w-[500px] mx-auto text-center gap-2">
+                <p class="text-[#434344] text-[16px]">
+                    This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. 
+                </p>
+                <p class="text-[22px] font-medium">Syny Eleaine </p>
+                <p class="text-[16px] font-medium text-[#434344]">CEO, Company Name</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[url('/images/bg/footer.svg')]  bg-no-repeat bg-cover  bg-fixed ">
+        <div class="max-w-[1440px] mx-auto px-5">
+            <div class="flex flex-col gap-4 py-[100px] ">
+                <div class="flex flex-col items-center justify-center max-w-[400px] mx-auto text-center ">
+                    <h2 class="text-white text-[48px] font-semibold">Stay Updated</h2>
+                    <p class="text-white text-[16px] font-regular">Once we have your content finalized, we’ll replace this placeholder text  with your real content.</p>
+                </div>
+    
+                <form class="flex border border-white rounded-full py-2 px-5 w-full max-w-[650px] mx-auto justify-between gap-3">
+                    <input class="bg-transparent border-none w-full text-white placeholder-white" type="text" placeholder="Enter your email">
+                    <button type="button" class="rounded-full bg-yellow-300  text-black px-5 py-2 hover:bg-yellow-400 transition duration-300">
+                        Submit
+                    </button>
+                </form>
+            </div>
+    
+    
+            <div class=" text-white ">
+                <div class="flex flex-col sm:flex-row justify-between gap-4">
+                    <div>
+                        <h4 class="text-white text-lg font-semibold">BookSummary</h4>
+                    </div>
+    
+                    <div class="flex flex-col sm:flex-row gap-4 text-[16px]">
+                        <p>Core Features</p>
+                        <p>Benefits</p>
+                        <p>How it works</p>
+                        <p>Top Picks</p>
+                    </div>
+                </div>
+
+                <hr class="my-5">
+                
+                <div class="text-center pb-5">
+                    <p class="text-[16px]">Copyright 2024. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
