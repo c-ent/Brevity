@@ -12,15 +12,15 @@
 </head>
 <body class="font-[Poppins] ">
 
-    <header  class="flex items-center max-w-[1400px] bg-[#0A2540] bg-opacity-25 backdrop-blur-[5px]  rounded-[10px] px-5  sticky top-[20px]  mx-auto z-50 h-[70px] shadow-[inset_0px_1px_1px_0px_rgba(255,255,255,0.15)]">
-        <nav class="flex items-center w-full justify-between">
+    <header  class="flex items-center max-w-[1400px] sticky top-[20px] mx-auto z-[99]">
+        <nav  id="nav" class="bg-[#0A2540] bg-opacity-25 backdrop-blur-[15px] rounded-[10px] shadow-[inset_0px_1px_1px_0px_rgba(255,255,255,0.15)] px-5 mx-5 h-[70px] flex items-center w-full justify-between gap-5">
             <!-- Logo or Brand Name -->
             <div class="flex-1">
                 <h4 class="text-white text-lg font-semibold">BookSummary</h4>
             </div>
     
             <!-- Navigation Links (Desktop) -->
-            <div class="hidden md:flex flex-1 items-center justify-center">
+            <div class="hidden lg:flex flex-2 items-center justify-center">
                 <ul class="flex text-white gap-6">
                     <li>Core Features</li>
                     <li>Benefits</li>
@@ -30,16 +30,15 @@
             </div>
     
             <!-- Mobile Menu Button -->
-            <button class="md:hidden text-white" aria-label="Toggle Menu">
+            <button id="mobile-menu-button" class="lg:hidden text-white" aria-label="Toggle Menu">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
-                
             </button>
     
-            <!-- Buttons -->
-            <div class="hidden md:flex gap-2 flex-1 justify-end">
-                <button type="button" class="rounded-full bg-yellow-300 text-black px-5 py-1 hover:bg-yellow-400 transition duration-300">
+            <!-- Buttons (Desktop) -->
+            <div class="hidden lg:flex gap-2 flex-1 justify-end">
+                <button type="button" class="rounded-full bg-yellow-300 text-black px-5 py-1 hover:bg-yellow-500 hover:text-white transition duration-300">
                     Sign up for free
                 </button>
                 <button type="button" class="rounded-full bg-transparent text-white border-white border px-5 py-1 hover:bg-white hover:text-black transition duration-300">
@@ -47,7 +46,28 @@
                 </button>
             </div>
         </nav>
+    
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div id="mobile-menu" class="fixed top-[calc(70px+20px)] mx-5 w-[calc(100%-2.5rem)] bg-[#0A2540] bg-opacity-25 backdrop-blur-[15px]  rounded-b-[10px] p-5 flex flex-col gap-6 scale-y-0 origin-top duration-300 lg:hidden">
+
+            <ul class="text-white flex flex-col gap-4">
+                <li>Core Features</li>
+                <li>Benefits</li>
+                <li>How it works</li>
+                <li>Top Picks</li>
+            </ul>
+            <div class="flex flex-col gap-2">
+                <button type="button" class="rounded-full bg-yellow-300 text-black px-5 py-1 hover:bg-yellow-500 hover:text-white transition duration-300">
+                    Sign up for free
+                </button>
+                <button type="button" class="rounded-full bg-transparent text-white border-white border px-5 py-1 hover:bg-white hover:text-black transition duration-300">
+                    Sign up for free
+                </button>
+            </div>
+        </div>
     </header>
+    
+    
     
 
    <main class="-mt-[70px]  overflow-hidden ">
@@ -56,23 +76,23 @@
             <p class="rounded-full  bg-yellow-300 text-black px-5 py-1">
                 Learn faster. Get smarter.
             </p>
-            <h1 class="text-[48px]  sm:text-7xl text-white  font-medium  sm:leading-normal">
-                Way more than <br> book summaries
+            <h1 class="text-[36px]  sm:text-[72px] text-white  font-medium  sm:leading-normal max-w-[700px]">
+                Way more than  book summaries
             </h1>
             <p class="text-white font-medium max-w-[660px] ">
-                This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. 
+                This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet. 
             </p>
             <div class="flex gap-2">
-                <button type="button" class="rounded-full  bg-yellow-300 text-black px-5 py-1">
+                <button type="button" class="rounded-full bg-yellow-300 text-black px-5 py-1 hover:bg-yellow-500 hover:text-white transition duration-300">
                     Sign up for free
                 </button>
                 <button type="button" class="rounded-full bg-transparent text-white border-white border px-5 py-1 hover:bg-white hover:text-black transition duration-300">
                     Sign up for free
                 </button>
             </div>
-            <img src="images/books/bookcats.png" alt="Book about Cats" class="absolute left-20  w-[143px] h-[143px]">
-            <img src="images/books/bookanimals.png" alt="Book about Animals" class="absolute right-20 top-14 w-[143px] h-[143px]">
-            <img src="images/books/bookmoon.png" alt="Book about Moon" class="absolute right-20 bottom-20 w-[143px] h-[143px]">
+            <img src="images/books/bookcats.png" alt="Book about Cats" class="absolute left-[10%] bottom-[10%] lg:bottom-[40%]         w-[130px] h-[130px]">
+            <img src="images/books/bookanimals.png" alt="Book about Animals" class="absolute right-[25%] lg::right-[10%] top-[15%]      w-[130px] h-[130px]">
+            <img src="images/books/bookmoon.png" alt="Book about Moon" class="absolute right-[10%]  bottom-[10%]                       w-[130px] h-[130px]">
             
         </section>
 
@@ -83,11 +103,12 @@
             </div>
             <div class="flex flex-1  flex-col  rounded-[20px] p-[30px] sm:p-[60px] gap-5 bg-gradient-to-l from-[#468482] to-[#25366B] ">
                 <p class="bg-[#EBEBEB] rounded-full px-5 py-1 w-fit">Feature</p>
-                <h2 class="text-white text-[40px] font-semibold max-w-[500px]">Unlock Your Potential with BookSummary</h2>
+                <h2 class="text-white text-[30px] sm:text-[40px] font-semibold max-w-[500px]">Unlock Your Potential with BookSummary</h2>
                 <p class="text-white text-[16px]">This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. </p>
-                <button type="button" class="rounded-full w-fit  bg-yellow-300 text-black px-5 py-1 ">
+                <button type="button" class="rounded-full w-fit  bg-yellow-300 text-black px-5 py-1 hover:bg-yellow-500 hover:text-white transition duration-300 ">
                 Sign up for free
                 </button>
+                
             </div>
         </section>
 
@@ -96,13 +117,13 @@
             <div class="w-full lg:w-[30%] flex flex-col  justify-between">
                 <div>
                     <p class="bg-[#EBEBEB] rounded-full px-5 py-1 w-fit">Benefits</p>
-                    <h2 class="text-[#001431] text-[40px] font-semibold max-w-[500px]">Unlock Your Potential with BookSummary</h2>
+                    <h2 class="text-[#001431] text-[30px] sm:text-[40px]  font-semibold max-w-[500px]">Unlock Your Potential with BookSummary</h2>
                     <p class="text-[#434344] text-[16px]">This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. </p>
                 </div>
-                <div class="flex justify-between items-end px-5">
-                    <img src="images/elements/plant1.png" alt="Plant" class="w-[100px] h-auto">
-                    <img src="images/elements/plant2.png" alt="Plant" class="w-[100px] h-[266px]">
-                    <img src="images/elements/plant1.png" alt="Plant" class="w-[100px] h-auto">
+                <div class="flex justify-between items-end ">
+                    <img src="images/elements/plant1.png" alt="Plant" class="w-auto h-[266px]">
+                    <img src="images/elements/plant2.png" alt="Plant" class="w-auto h-[266px]">
+                    <img src="images/elements/plant1.png" alt="Plant" class="w-auto h-[266px]">
                 </div>
                
             </div>
@@ -143,7 +164,7 @@
             <div class="flex flex-col gap-[40px] max-w-[1440px]  mx-auto  px-5 py-[100px] ">
                 <div class="flex flex-col items-center max-w-[500px] mx-auto text-center">
                     <p class="bg-[#EBEBEB] rounded-full px-5 py-1 w-fit">How It Works</p>
-                    <h2 class="text-[#001431] text-[40px] font-semibold max-w-[500px]">Step-by-Step Guide to BookSummary</h2>
+                    <h2 class="text-[#001431] text-[30px] sm:text-[40px]  font-semibold max-w-[500px]">Step-by-Step Guide to BookSummary</h2>
                     <p class="text-[#434344] text-[16px]">This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. </p>
                 </div>
     
@@ -159,7 +180,7 @@
                             </p>
                             <div class="flex flex-col gap-2">
                                 <p class="font-semibold text-[16px] text-[#3466A9]">Key Features</p>
-                                <h3 class="text-[36px] max-w-[400px] font-semibold text-[#001431]">
+                                <h3 class="text-[24px] sm:text-[36px] max-w-[400px] font-semibold text-[#001431]">
                                     Create Your Account and Sign Up
                                 </h3>
     
@@ -169,8 +190,8 @@
                             </div>
                         </div>
 
-                        <div class="flex-1 ">
-                            <img src="images/books/bookbalance.png" alt="Book about Balance" class="w-[300px] h-[300px] mx-auto">
+                        <div class="flex   flex-1 ">
+                            <img src="images/books/bookbalance.png" alt="Book about Balance" class="ml-[80px]  w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] sm:mx-auto">
                         </div>
                     </div>
 
@@ -184,7 +205,7 @@
                             </p>
                             <div class="flex flex-col gap-2">
                                 <p class="font-semibold text-[16px] text-[#3466A9]">Key Features</p>
-                                <h3 class="text-[36px] max-w-[400px] font-semibold text-[#001431]">
+                                <h3 class="text-[24px] sm:text-[36px] max-w-[400px] font-semibold text-[#001431]">
                                     Explore and Browse Our Library
                                 </h3>
     
@@ -195,7 +216,7 @@
                         </div>
 
                         <div class="flex-1 ">
-                            <img src="images/books/bookmoon.png" alt="Book about Moon" class="w-[300px] h-[300px] mx-auto">
+                            <img src="images/books/bookmoon.png" alt="Book about Moon" class="ml-[80px]  w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] sm:mx-auto">
                         </div>
                     </div>
 
@@ -209,7 +230,7 @@
                             </p>
                             <div class="flex flex-col gap-2">
                                 <p class="font-semibold text-[16px] text-[#3466A9]">Key Features</p>
-                                <h3 class="text-[36px] max-w-[400px] font-semibold text-[#001431]">
+                                <h3 class="text-[24px] sm:text-[36px] max-w-[400px] font-semibold text-[#001431]">
                                     Dive In to Our Innovative Features
                                 </h3>
     
@@ -220,7 +241,7 @@
                         </div>
 
                         <div class="flex-1 ">
-                            <img src="images/books/bookanimals.png" alt="Book about Animals" class="w-[300px] h-[300px] mx-auto">
+                            <img src="images/books/bookanimals.png" alt="Book about Animals" class="ml-[80px]  w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] sm:mx-auto">
                         </div>
                     </div>
                 </div>
@@ -233,9 +254,9 @@
                 <!-- Title -->
                 <div class="flex flex-col flex-auto w-full sm:w-[40%]  gap-3 ">
                     <p class="bg-[#EBEBEB] rounded-full px-5 py-1 w-fit">Feature</p>
-                    <h2 class="text-white text-[40px] font-semibold ">Featured Books</h2>
+                    <h2 class="text-white text-[30px] sm:text-[40px]  font-semibold ">Featured Books</h2>
                     <p class="text-white text-[16px]">This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. </p>
-                    <button type="button" class="rounded-full w-fit  bg-yellow-300 text-black px-5 py-1 ">
+                    <button type="button" class="rounded-full w-fit  bg-yellow-300 text-black px-5 py-1 hover:bg-yellow-500 hover:text-white transition duration-300 ">
                         Browse Books
                     </button>
                 </div>
@@ -268,11 +289,11 @@
         <section class="flex flex-col gap-8  max-w-[1440px] mx-auto mb-[100px] p-5"> 
             <div class="flex flex-col items-center max-w-[500px] mx-auto text-center">
                 <p class="bg-[#EBEBEB] rounded-full px-5 py-1 w-fit">User Feedback</p>
-                <h2 class="text-[#001431] text-[40px] font-semibold max-w-[500px]">Why People Love Using BookSummary</h2>
+                <h2 class="text-[#001431] text-[30px] sm:text-[40px]    font-semibold max-w-[500px]">Why People Love Using BookSummary</h2>
             </div>
 
             <div class="max-w-[1050px] mx-auto">
-                <div class="flex flex-wrap justify-center mx-auto max-w-[900px] gap-2">
+                <div class="flex flex-wrap justify-center mx-auto max-w-[600px] gap-2">
                     <img src="images/people/avatar1.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
                     <img src="images/people/avatar2.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
                     <img src="images/people/avatar3.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
@@ -284,12 +305,6 @@
                     <img src="images/people/avatar1.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
                     <img src="images/people/avatar2.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
                     <img src="images/people/avatar3.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
-                    <img src="images/people/avatar4.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
-                    <img src="images/people/avatar4.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
-                    <img src="images/people/avatar1.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
-                    <img src="images/people/avatar2.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
-                    <img src="images/people/avatar3.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
-                    <img src="images/people/avatar4.png" alt="Avatar" class="w-[80px] h-[80px] rounded-full mb-4">
                 </div>
             </div>
             <div class="flex flex-col items-center max-w-[500px] mx-auto text-center gap-2">
@@ -306,13 +321,13 @@
         <div class="max-w-[1440px] mx-auto px-5">
             <div class="flex flex-col gap-4 py-[100px] ">
                 <div class="flex flex-col items-center justify-center max-w-[400px] mx-auto text-center ">
-                    <h2 class="text-white text-[48px] font-semibold">Stay Updated</h2>
+                    <h2 class="text-white text-[30px] sm:text-[40px]  font-semibold">Stay Updated</h2>
                     <p class="text-white text-[16px] font-regular">Once we have your content finalized, we’ll replace this placeholder text  with your real content.</p>
                 </div>
     
                 <form class="flex border border-white rounded-full py-2 px-5 w-full max-w-[650px] mx-auto justify-between gap-3">
                     <input class="bg-transparent border-none w-full text-white placeholder-white" type="text" placeholder="Enter your email">
-                    <button type="button" class="rounded-full bg-yellow-300  text-black px-5 py-2 hover:bg-yellow-400 transition duration-300">
+                    <button type="button" class="rounded-full bg-yellow-300  text-black px-5 py-2 hover:bg-yellow-500 hover:text-white transition duration-300">
                         Submit
                     </button>
                 </form>
@@ -341,5 +356,29 @@
             </div>
         </div>
     </footer>
+
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const nav = document.getElementById('nav');
+
+    menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('scale-y-0');  // Hide 
+        mobileMenu.classList.toggle('scale-y-100'); // Show 
+
+        // Rounded corners for the nav
+        if (mobileMenu.classList.contains('scale-y-100')) {
+            nav.classList.remove('rounded-[10px]');
+            nav.classList.add('rounded-t-[10px]');
+        } else {
+            nav.classList.remove('rounded-t-[10px]');
+            nav.classList.add('rounded-[10px]');
+        }
+    });
+});
+
+    </script>
 </body>
 </html>

@@ -4,9 +4,9 @@
 # Email: encarnacionelher@gmail.com
 
 
-# h1  text-7xl
-# h2  40px
-# h3  36px
-# h4  24px
+# h1  72px sm:42px
+# h2  40px sm:30px
+# h3  36px sm:24px
+# h4  24px sm:20px
 
-# p 16px #434344
+# p 16px #434344 sm:16px
