@@ -367,12 +367,14 @@
                 <hr class="my-5">
                 
                 <div class="text-center pb-5">
-                    <p class="text-[16px]">Copyright 2024. All Rights Reserved</p>
+                    <p class="text-[16px]">Copyright <span id="copyright-year"></span>. All Rights Reserved</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+        <script src="scripts.js"></script>
+        <!-- Set copyright year dynamically -->
+        <script>document.getElementById('copyright-year').textContent = new Date().getFullYear()</script>
 </body>
 </html>
