@@ -1,6 +1,6 @@
 # Brevity 📚
 
-A modern, responsive landing page for a book summary platform. Brevity helps users learn faster by distilling the world's best books into clear, actionable summaries and learning tools.
+A modern, responsive landing page for a book summary platform.
 
 ## Features
 
