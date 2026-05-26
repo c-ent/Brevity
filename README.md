@@ -7,6 +7,7 @@ A modern, responsive landing page for a book summary platform.
 - **Responsive Design**: Fully responsive layout built with Tailwind CSS
 - **Smooth Animations**: Custom animations including fade-in, slide-up, and floating effects
 - **Interactive Navigation**: Sticky header with mobile-friendly hamburger menu
+- **Page Loader**: Animated loading screen on startup
 - **Newsletter Signup**: Email subscription form for staying updated
 - **Feature Sections**: Core features, benefits, how it works, and top picks showcase
 - **Testimonials**: User feedback section with avatar grid
@@ -58,4 +59,4 @@ start index.html
 
 ## License
 
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+This project is licensed under the MIT License.
