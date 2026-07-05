@@ -3,6 +3,13 @@ html {
     scroll-behavior: smooth;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #FACC15;
+  outline-offset: 2px;
+}
+
 /* Loading animation styles */
 .loader-wrapper {
     position: fixed;
@@ -141,6 +148,15 @@ body.loading {
   
   .animation-delay-700 {
     animation-delay: 0.7s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 
 
