@@ -1,17 +1,6 @@
 # Brevity 📚
 
-A modern, responsive landing page for a book summary platform.
-
-## Features
-
-- **Responsive Design**: Fully responsive layout built with Tailwind CSS
-- **Smooth Animations**: Custom animations including fade-in, slide-up, and floating effects
-- **Interactive Navigation**: Sticky header with mobile-friendly hamburger menu
-- **Page Loader**: Animated loading screen on startup
-- **Newsletter Signup**: Email subscription form for staying updated
-- **Feature Sections**: Core features, benefits, how it works, and top picks showcase
-- **Testimonials**: User feedback section with avatar grid
-- **Modern UI**: Gradient backgrounds, glassmorphism effects, and smooth transitions
+A book summary platform.
 
 ## Tech Stack
 
